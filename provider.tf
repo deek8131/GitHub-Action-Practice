@@ -8,12 +8,12 @@ terraform {
     }
   }
 
-  backend "azurerm" {
-    resource_group_name  = "tfstate-rg"
-    storage_account_name = "tfstatestorage001"   # ← apna storage account naam dalo
-    container_name       = "tfstate"
-    key                  = "rg.terraform.tfstate"
-  }
+ backend "azurerm" {
+  resource_group_name  = "tfstate-rg"
+  storage_account_name = "tfstate19may2026"   # ← yeh naya naam
+  container_name       = "tfstate"
+  key                  = "rg.terraform.tfstate"
+}
 }
 
 provider "azurerm" {
